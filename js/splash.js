@@ -3,10 +3,10 @@ mixpanel.track("PageLaunch", {page:"splash"});
 
 //animated gradient bg
 var colors = new Array(
-  [48, 255, 137],
-  [0, 191, 255],
-  [172, 48, 255],
-  [118, 28, 255]);
+  [85, 33, 0],
+  [212, 147, 106],
+  [161, 54, 71],
+  [170, 127, 57]);
 
 var step = 0;
 //color table indices for: 
