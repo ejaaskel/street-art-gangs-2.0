@@ -1,4 +1,4 @@
-mixpanel.track("PageLaunch", {page:"splash"});
+mixpanel.track("PageLaunch", {page:"test"});
 
 
 //animated gradient bg
@@ -59,8 +59,9 @@ var color2 = "#"+((r2 << 16) | (g2 << 8) | b2).toString(16);
 }
 
 function updateProgressbars(){
- var ni = document.getElementById('progressbars');
-
+  var ni = document.getElementById('progress1');
+  ni.setAttribute('value',80);
+  
   var newdiv = document.createElement('progress');
 
   var divIdName = 'progress1';
@@ -75,7 +76,7 @@ function updateProgressbars(){
 
 setInterval(updateGradient,1);
 
-setInterval(updateProgressbars,1000);
+//setInterval(updateProgressbars,1000);
 
  
 
