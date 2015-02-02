@@ -20,9 +20,12 @@
   <link rel="stylesheet" type="text/css" href="css/icons.css" />
   <link rel="stylesheet" type="text/css" href="css/universal.css" />
   <link rel="stylesheet" type="text/css" href="css/test.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
 
   <!-- Scripts -->
   <script src="js/modernizr.custom_modalnew.js"></script>
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
   
 <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);
@@ -33,17 +36,16 @@ mixpanel.init("21b5b03d56c32459d17071cb2073ffce");</script><!-- end Mixpanel -->
 <body class="test">
 	<div class="container"> 	
 
+	<div id="progressbar"></div>
+	
     <div class="logo">
         <img class="tm" src="img/logo.jpg">
         <p class="brand"><span class="street">street</span> <span class="art">Art</span> <span class="gangs">gangs</span></p>
         <p id="version" class="brand">v.2.0</p>      
     </div>
 
-	<div class="progress-bars" id="progressbars">
 	
-		<progress id="progress1" value="10" max="100"></progress>
 	
-	</div>
     <nav>
       <a href="#" id="trigger-overlay" data-modal="modal-help"><span class="icon-info"></span></a>
       <a href="signup.html">Signup <span class="icon-arrow-rights-small"></span></a>
@@ -67,7 +69,8 @@ mixpanel.init("21b5b03d56c32459d17071cb2073ffce");</script><!-- end Mixpanel -->
 
 
   <!-- Scripts -->
-  <script src="js/jquery-1.10.2.min.js"></script>
+  
+  
   <script src="js/classie_menu.js"></script>
   <script src="js/modalscript.js"></script>
   <script src="js/modernizr.custom_modalnew.js"></script>
