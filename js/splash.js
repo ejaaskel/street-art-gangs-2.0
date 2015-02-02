@@ -62,4 +62,4 @@ setInterval(updateGradient,1);
 
 //animate.css
 $('nav').addClass('animated bounceInDown');
-$('.logo').addClass('animated flipInX');
+$('.logo').addClass('animated flipInY');

@@ -3,7 +3,7 @@
 jQuery(document).ready(function(){
 
       if (!localStorage.authorization||!localStorage.color||!localStorage.gangster||!localStorage.gang) {
-        window.location = "splash.html";
+        window.location = "test.html";
       } else {
 	    var color = localStorage.color;
 		var gangster = localStorage.gangster;

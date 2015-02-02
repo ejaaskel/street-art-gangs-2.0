@@ -33,7 +33,8 @@ $(document).ready(function(){
         //TODO: Validate.
         //TODO Check same password
 
-        var endpoint = "http://vm0063.virtues.fi/authentication/";
+        //var endpoint = "http://vm0063.virtues.fi/authentication/";
+		var endpoint = "http://192.168.56.101/authentication/";
 
         var username = $('#username').val();
         var email = $('#email').val();

@@ -71,7 +71,8 @@ $(document).ready(function(){
     $('.btn.btntxt').one( "click", function() {
         //TODO: Validate.
 
-        var endpoint = "http://vm0063.virtues.fi/authentication/";
+        //var endpoint = "http://vm0063.virtues.fi/authentication/";
+		var endpoint = "http://192.168.56.101/authentication/";
         var username = $('#username').val();
         var password = $('#password').val();
         var authorization = make_base_auth(username, password);
