@@ -1,4 +1,4 @@
-mixpanel.track("PageLaunch", {page:"splash"});
+mixpanel.track("PageLaunch", {page:"test"});
 
 
 //animated gradient bg
@@ -58,7 +58,30 @@ var color2 = "#"+((r2 << 16) | (g2 << 8) | b2).toString(16);
   }
 }
 
+function updateProgressbars(){
+  var ni = document.getElementById('progress1');
+  ni.setAttribute('value',80);
+  
+  var newdiv = document.createElement('progress');
+
+  var divIdName = 'progress1';
+
+  newdiv.setAttribute('id',divIdName);
+  newdiv.setAttribute('value',80);
+  newdiv.setAttribute('max',100);
+
+
+  ni.appendChild(newdiv);
+}
+
 setInterval(updateGradient,1);
+
+setInterval(updateProgressbars,1000);
+
+ 
+
+ 
+ 
 
 //animate.css
 $('nav').addClass('animated bounceInDown');
